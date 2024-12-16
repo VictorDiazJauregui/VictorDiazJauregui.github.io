@@ -1,20 +1,38 @@
 ---
 import GitHub from "./icons/GitHub.astro"
-import NextJS from "./icons/NextJS.astro"
 import Tailwind from "./icons/Tailwind.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
+import NodeJS from "./icons/NodeJS.astro"
+import ReactJS from "./icons/ReactJS.astro"
+import PostgreSQL from "./icons/PostgreSQL.astro"
+import Playwright from "./icons/Playwright.astro"
 
 const TAGS = {
-  NEXT: {
-    name: "Next.js",
+  REACT: {
+    name: "ReactJS",
     class: "bg-black text-white",
-    icon: NextJS,
+    icon: ReactJS,
   },
   TAILWIND: {
-    name: "Tailwind CSS",
+    name: "Tailwind",
     class: "bg-[#003159] text-white",
     icon: Tailwind,
+  },
+  POSTGRESQL: {
+    name: "PostgreSQL",
+    class: "bg-[#336791] text-white",
+    icon: PostgreSQL,
+  },
+  NODEJS: {
+    name: "NodeJS",
+    class: "bg-[#0a7f04] text-white",
+    icon: NodeJS,
+  },
+  PLAYWRIGHT: {
+    name: "Playwright",
+    class: "bg-[#1f1f1f] text-white",
+    icon: Playwright,
   },
 }
 const PROJECTS = [
@@ -25,7 +43,7 @@ const PROJECTS = [
     link: "https://svgl.vercel.app/",
     github: "https://github.com/pheralb/svgl",
     image: "/projects/svgl.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.POSTGRESQL, TAGS.NODEJS],
   },
   {
     title: "AdventJS - Retos de programación con JavaScript y TypeScript",
@@ -33,7 +51,7 @@ const PROJECTS = [
       "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
     link: "https://adventjs.dev",
     image: "/projects/adventjs.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.NODEJS, TAGS.PLAYWRIGHT],
   },
 ]
 ---
