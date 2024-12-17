@@ -1,28 +1,19 @@
 ---
 import GitHub from "./icons/GitHub.astro"
-import Tailwind from "./icons/Tailwind.astro"
+import HuggingFace from "./icons/HuggingFace.astro"
 import Link from "./icons/Link.astro"
 import NodeJS from "./icons/NodeJS.astro"
-import ReactJS from "./icons/ReactJS.astro"
-import PostgreSQL from "./icons/PostgreSQL.astro"
 import Playwright from "./icons/Playwright.astro"
+import PostgreSQL from "./icons/PostgreSQL.astro"
+import ReactJS from "./icons/ReactJS.astro"
 import SocialPill from "@/components/SocialPill.astro"
+import Tailwind from "./icons/Tailwind.astro"
 
 const TAGS = {
-  REACT: {
-    name: "ReactJS",
-    class: "bg-black text-white",
-    icon: ReactJS,
-  },
-  TAILWIND: {
-    name: "Tailwind",
-    class: "bg-[#003159] text-white",
-    icon: Tailwind,
-  },
-  POSTGRESQL: {
-    name: "PostgreSQL",
-    class: "bg-[#336791] text-white",
-    icon: PostgreSQL,
+  HUGGINGFACE: {
+    name: "Hugging Face",
+    class: "bg-[#1f1f1f] text-white",
+    icon: HuggingFace,
   },
   NODEJS: {
     name: "NodeJS",
@@ -33,6 +24,21 @@ const TAGS = {
     name: "Playwright",
     class: "bg-[#1f1f1f] text-white",
     icon: Playwright,
+  },
+  POSTGRESQL: {
+    name: "PostgreSQL",
+    class: "bg-[#336791] text-white",
+    icon: PostgreSQL,
+  },
+  REACT: {
+    name: "ReactJS",
+    class: "bg-black text-white",
+    icon: ReactJS,
+  },
+  TAILWIND: {
+    name: "Tailwind",
+    class: "bg-[#003159] text-white",
+    icon: Tailwind,
   },
 }
 const PROJECTS = [
@@ -52,6 +58,14 @@ const PROJECTS = [
     github: "https://github.com/VictorDiazJauregui/instagram-story-screenshotter.git",
     image: "/projects/instagram-story-screenshotter.webp",
     tags: [TAGS.NODEJS, TAGS.PLAYWRIGHT],
+  },
+  {
+    title: "Terminal Assistant",
+    description:
+      "Asistente inteligente para la terminal que utiliza modelos de Hugging Face para mantener conversaciones naturales y brindar respuestas útiles basadas en un rol asignado. Creado desde cero con NodeJS.",
+    github: "https://github.com/VictorDiazJauregui/terminal-assistant",
+    image: "/projects/terminal-assistant.webp",
+    tags: [TAGS.NODEJS, TAGS.HUGGINGFACE],
   },
 ]
 ---
