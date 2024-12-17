@@ -2,11 +2,11 @@
 import GitHub from "./icons/GitHub.astro"
 import Tailwind from "./icons/Tailwind.astro"
 import Link from "./icons/Link.astro"
-import LinkButton from "./LinkButton.astro"
 import NodeJS from "./icons/NodeJS.astro"
 import ReactJS from "./icons/ReactJS.astro"
 import PostgreSQL from "./icons/PostgreSQL.astro"
 import Playwright from "./icons/Playwright.astro"
+import SocialPill from "@/components/SocialPill.astro"
 
 const TAGS = {
   REACT: {
@@ -87,17 +87,16 @@ const PROJECTS = [
       <div class="mt-2 text-gray-700 dark:text-gray-400">{description}</div>
       <footer class="flex items-end justify-start mt-4 gap-x-4">
           {github && (
-            <LinkButton href={github}>
+            <SocialPill href={github}>
               <GitHub class="size-6" />
               Code
-              
-            </LinkButton>
+            </SocialPill>
           )}
           {link && (
-            <LinkButton href={link}>
-              <Link class="size-4" />
+            <SocialPill href={link}>
+              <Link class="size-6" />
               Preview
-            </LinkButton>
+            </SocialPill>
           )}
         </footer>
     </div>
